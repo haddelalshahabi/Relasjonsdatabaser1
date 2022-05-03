@@ -1,6 +1,6 @@
 CREATE TABLE Motorvogn
 (
-    personnr BIGINT NOT NULL,
+    personnr INTEGER NOT NULL,
     navn VARCHAR(255) NOT NULL,
     adresse VARCHAR(255) NOT NULL,
     kjennetegn VARCHAR(255) NOT NULL,

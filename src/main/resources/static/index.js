@@ -80,6 +80,7 @@ function formaterData(biler) {
     $("#bilene").html(ut);
 }
 
+// Oppgave 2
 function slettEnMotorvogn(personnr) {
     const url = "/slettEnMotorvogn?personnr="+personnr;
     $.get( url, function() {

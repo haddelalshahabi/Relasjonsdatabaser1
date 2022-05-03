@@ -1,14 +1,14 @@
 package oslomet.relasjonsdatabaser1;
 
 public class Motorvogn {
-    private long personnr; // får problemer med å finne igjen rader i databasen dersom denne er String (primær nøkkel)
+    private int personnr; // får problemer med å finne igjen rader i databasen dersom denne er String (primær nøkkel)
     private String navn;
     private String adresse;
     private String kjennetegn;
     private String merke;
     private String type;
 
-    public Motorvogn(long personnr, String navn, String adresse, String kjennetegn, String merke, String type) {
+    public Motorvogn(int personnr, String navn, String adresse, String kjennetegn, String merke, String type) {
         this.personnr = personnr;
         this.navn = navn;
         this.adresse = adresse;
@@ -20,11 +20,11 @@ public class Motorvogn {
     public Motorvogn() {
     }
 
-    public long getPersonnr() {
+    public int getPersonnr() {
         return personnr;
     }
 
-    public void setPersonnr(long personnr) {
+    public void setPersonnr(int personnr) {
         this.personnr = personnr;
     }
 

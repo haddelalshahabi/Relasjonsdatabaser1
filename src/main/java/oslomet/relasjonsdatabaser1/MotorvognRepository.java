@@ -28,6 +28,7 @@ public class MotorvognRepository {
         return db.query(sql,new BeanPropertyRowMapper(Motorvogn.class));
     }
 
+    //oppgave 2
     public void slettEnMotorvogn(String personnr) {
         String sql = "DELETE FROM Motorvogn WHERE personnr=?";
         db.update(sql,personnr);
